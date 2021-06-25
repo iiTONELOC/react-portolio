@@ -1,0 +1,7 @@
+:root{
+  /* COLORS */
+  --light-gray: rgb(214, 214, 214);
+
+  /* PAGE GLOBALS */
+  background-color:var(--light-gray);
+}
