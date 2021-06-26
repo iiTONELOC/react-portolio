@@ -22,7 +22,6 @@ function App() {
         {/* PROJECTS */}
         {/* CONTACT */}
         {/* RESUME */}
-
       </div >
       <Footer></Footer>
     </main>
