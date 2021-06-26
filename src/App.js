@@ -1,19 +1,10 @@
 import React, { useState } from 'react';
-import Container from '@material-ui/core/Container';
-import Nav from './components/Nav';
-import { createMuiTheme, ThemeProvider } from "@material-ui/core";
-import roboto from '@fontsource/roboto';
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: "#8ce379"
-    },
-    secondary: {
-      main: "#d079e3"
-    }
-  },
-  fontFamily: roboto,
-});
+import MyNav from './components/Nav';
+import "bootstrap/dist/css/bootstrap.min.css";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col'
+
 function App() {
   // constants for nav bar
   const [tabs] = useState([
@@ -25,25 +16,26 @@ function App() {
     { name: 'Resume' },
   ]);
   return (
-    <ThemeProvider
-      theme={theme}
+
+    <Container
+      bg="dark"
+      fluid
+      className={'m-0 p-0'}
     >
-      <Container
-        className="Container"
-        maxWidth={false}
-        disableGutters
-      >
-        {/* INSERT NAV */}
-        < Nav tabs={tabs}></Nav >
-        {/* INSERT 'HERO' */}
-        {/* INSERT ABOUT */}
-        {/* INSERT PROJECTS/PORTFOLIO */}
-        {/* INSERT  CONTACT*/}
-        {/* INSERT DOWNLOAD RESUME */}
-        {/* INSERT FOOTER */}
-      </Container >
-    </ThemeProvider>
-    // *main div for page
+      <Row xs={12}>
+        <Col xs={12}>
+          <MyNav tabs={tabs}></MyNav>
+        </Col>
+        <Col xs={12}>
+          {/* ABOUT */}
+          {/* PROJECTS */}
+          {/* CONTACT */}
+          {/* RESUME */}
+        </Col>
+      </Row>
+    </Container>
+
+
 
   );
 }
