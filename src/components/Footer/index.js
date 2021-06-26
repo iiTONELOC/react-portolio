@@ -23,7 +23,7 @@ export default function Footer() {
                         </button>
                     </Nav.Link>
                     <Nav.Link
-                        href='https://linkedin.com/anthony-t-29353b201'
+                        href='https://github.com/iiTONELOC'
                         target='_blank'
                         rel='noreopener'
                     >
@@ -44,7 +44,7 @@ export default function Footer() {
                     </Nav.Link>
                 </Nav>
             </Navbar>
-        </Container>
+        </Container >
 
 
     );
