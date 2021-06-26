@@ -12,7 +12,7 @@ export default function About() {
                     </Col>
                     {/* CONTENT */}
                     <Col xs={{ span: 10, order: 3 }} className='mt-5'>
-                        <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore delectus, perferendis nemo inventore iste unde dolor reprehenderit et quisquam ad autem tempora aliquid quibusdam perspiciatis officia animi cumque corporis sed.
+                        <p className="lead">Full Stack Web Developer with proven experience as a project manager. Skills in HTML, CSS, JavaScript, React.js, RWD, and agile development. Passionate about solving problems and providing meaningful web applications with a mobile-first approach that improve the lives of those around me.
                         </p>
                     </Col>
                     {/* IMAGE/AVATAR */}
