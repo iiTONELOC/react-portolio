@@ -1,7 +1,37 @@
+
 :root{
   /* COLORS */
   --light-gray: rgb(214, 214, 214);
 
   /* PAGE GLOBALS */
-  background-color:var(--light-gray);
+  /* background-color:var(--light-gray); */
+  font-family: 'Roboto', sans-serif;
+}
+#root{
+  min-width: 100vw;
+}
+
+  /* NAV */
+  .navBar{
+    min-height: 75px;
+    /* width: 100%; */
+    background-color: rgb(112, 199, 117);
+  }
+  .navLink{
+    text-shadow: 1px 1px 2px black;
+    font-size: 1.5rem;
+  }
+  .navTitle{
+    font-size: 30px;
+  }
+  /* END NAV */
+
+  /* ABOUT */
+.headingTitle{
+  font-weight: 700;
+  
+}
+.avatar{
+  object-fit: cover;
+  object-position: center center;
 }
