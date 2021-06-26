@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import MyNav from './components/Nav';
 import About from './components/About';
+import Projects from './components/Portfolio';
 import Footer from './components/Footer';
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -19,7 +20,7 @@ function App() {
       <div className='container-fluid m-0 p-0 mainContainer'>
         <MyNav tabs={tabs}></MyNav>
         <About></About>
-        {/* PROJECTS */}
+        <Projects></Projects>
         {/* CONTACT */}
         {/* RESUME */}
       </div >
