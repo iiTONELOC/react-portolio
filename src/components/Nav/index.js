@@ -55,6 +55,27 @@ export default function Nav(props) {
 }
 
 
+// NAV RETURN
+return (
+    <Container fluid className='navBar'>
+        <Navbar className={'d-flex flex-wrap justify-content-between p-4'}>
+            <div className='d-flex flex-wrap justify-content-center'>
+                <Navbar.Brand href="#home" ><h1 className='navTitle'>Anthony T</h1> </Navbar.Brand>
+            </div>
+
+            <Nav className='d-flex flex-wrap justify-content-center'>
+                {tabs.map((tabs) => (
+                    <Nav.Link
+                        onPointerOver={(e) => { changeButtonColor(e) }}
+                        onPointerOut={(e) => { changeButtonColor(e, true) }}
+                        href={`#${tabs.name}`}
+                        key={tabs.name}
+                        className="navLink text-white"
+                    >{tabs.name}</Nav.Link>
+                ))}
+            </Nav>
+        </Navbar>
+    </Container>
 
 // import React, { useEffect } from 'react';
 // import { AppBar, Toolbar, IconButton, Typography, Button } from '@material-ui/core';
