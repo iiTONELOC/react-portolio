@@ -5,10 +5,6 @@ import Container from 'react-bootstrap/Container';
 
 
 
-
-
-
-
 export default function MyNav(props) {
 
     // pass the nav tabs down from App so we can control what renders
@@ -23,8 +19,6 @@ export default function MyNav(props) {
         if (target.matches('a')) target.style = linkStyle;
         if (remove) target.matches('span') ? target.parentElement.style = '' : target.style = '';
     }
-
-
 
     // NAV RETURN
     return (
@@ -47,7 +41,5 @@ export default function MyNav(props) {
                 </Nav>
             </Navbar>
         </Container>
-
-
     );
 }

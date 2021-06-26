@@ -26,20 +26,19 @@ export default function Footer() {
         }
     ]
 
-
-
     return (
-        <Container fluid className='navBar'>
+        <Container fluid className='footer mt-5'>
             <Navbar className={'d-flex flex-wrap justify-content-center p-2'}>
-                <Nav className='d-flex flex-wrap justify-content-between'>
+                <Nav className='d-flex flex-wrap justify-content-evenly'>
                     {contactLinks.map((link) => (
                         <Nav.Link
                             href={link.url}
                             target='_blank'
                             rel='noreopener'
+                            key={link.name}
                         >
                             <button type="button" className={`btn btn-${link.color}`}>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class={`bi bi-${link.name}`} viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" className={`bi bi-${link.name}`} viewBox="0 0 16 16">
                                     <path d={link.svgD}></path>
                                 </svg>
                             </button>
@@ -48,8 +47,6 @@ export default function Footer() {
                 </Nav>
             </Navbar>
         </Container >
-
-
     );
 }
 

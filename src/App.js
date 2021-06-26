@@ -16,7 +16,7 @@ function App() {
   ]);
   return (
     <main>
-      <div className='container-fluid m-0 p-0'>
+      <div className='container-fluid m-0 p-0 mainContainer'>
         <MyNav tabs={tabs}></MyNav>
         <About></About>
         {/* PROJECTS */}
@@ -26,13 +26,6 @@ function App() {
       </div >
       <Footer></Footer>
     </main>
-
-
-
-
-
-
-
   );
 }
 
