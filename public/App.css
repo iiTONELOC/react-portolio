@@ -64,13 +64,20 @@
 
 /* PROJECT */
 .projectCard {
-	min-height: 512px;
+	min-height: fit-content;
 }
 .projectImage {
 	max-height: 175px;
 	object-fit: cover;
 }
-
+.more {
+	height: 50px;
+	width: 50px;
+}
+.nodeIcon {
+	height: 25px;
+	width: 25px;
+}
 /* @media */
 
 /* PROJECT CARD IMAGE */

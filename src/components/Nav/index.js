@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 
 export default function MyNav(props) {
+
     // pass the nav tabs down from App so we can control what renders
     const {
         tabs = [],
