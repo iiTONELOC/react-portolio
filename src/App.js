@@ -25,8 +25,8 @@ function App() {
           currentView={currentView}
         >
         </MyNav>
-        <About></About>
-        {currentView.name === "Projects" && <Projects></Projects>}
+        {!currentView ? <About></About> : currentView.name === "Projects" ? <Projects></Projects> : currentView.name === "About" ? <About></About> : ''}
+
         {/* CONTACT */}
         {/* RESUME */}
       </div >
