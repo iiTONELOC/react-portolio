@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import MyNav from './components/Nav';
 import About from './components/About';
 import Projects from './components/Portfolio';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -25,7 +26,9 @@ function App() {
           currentView={currentView}
         >
         </MyNav>
-        {!currentView ? <About></About> : currentView.name === "Projects" ? <Projects></Projects> : currentView.name === "About" ? <About></About> : ''}
+        {!currentView ? <About></About> :
+          currentView.name === "Projects" ? <Projects></Projects> :
+            currentView.name === "Contact" ? <Contact></Contact> : <About></About>}
 
         {/* CONTACT */}
         {/* RESUME */}

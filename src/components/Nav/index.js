@@ -15,7 +15,11 @@ export default function MyNav(props) {
     const changeButtonColor = (e, remove) => {
         const linkStyle = 'background-color: rgba(208, 121, 227, 0.767); border-radius: 5px;)';
         const target = e.target;
-        remove ? target.matches('span') ? target.parentElement.style = '' : target.style = '' : target === 'span' ? target.parentElement.style = linkStyle : target.style = linkStyle
+        remove ? target.matches('span') ?
+            target.parentElement.style = '' :
+            target.style = '' :
+            target === 'span' ? target.parentElement.style = linkStyle :
+                target.style = linkStyle
     }
     // NAV RETURN
     return (

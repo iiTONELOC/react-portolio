@@ -31,6 +31,9 @@
 .yellow {
 	background-color: rgb(230, 180, 54);
 }
+.lightGray {
+	background-color: rgb(214, 214, 214);
+}
 #root {
 	min-width: 100vw;
 }
@@ -85,6 +88,15 @@
 .projectTitle {
 	font-size: 30px;
 }
+/* END PROJECT */
+
+/* CONTACT */
+.contactForm {
+	border: 2px solid rgb(14, 26, 14);
+	border-radius: 10px;
+}
+
+/* END CONTACT */
 /* @media */
 
 /* PROJECT CARD IMAGE */
