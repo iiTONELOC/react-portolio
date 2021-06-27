@@ -26,7 +26,7 @@ export default function MyNav(props) {
         <Container fluid className='navBar'>
             <Navbar className={'d-flex flex-wrap justify-content-between p-5'}>
                 <div className='d-flex flex-wrap justify-content-center'>
-                    <Navbar.Brand href="#home" ><h1 className='navTitle'>Anthony T</h1> </Navbar.Brand>
+                    <Navbar.Brand href="#home" ><h1 className='navTitle textShadow'>Anthony T</h1> </Navbar.Brand>
                 </div>
                 <Nav className='d-flex flex-wrap justify-content-center'>
                     {tabs.map((tabs) => (

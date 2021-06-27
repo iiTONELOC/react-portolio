@@ -37,7 +37,7 @@ export default function Footer() {
                             rel='noreopener'
                             key={link.name}
                         >
-                            <button type="button" className={`btn btn-${link.color}`}>
+                            <button type="button" className={`btn btn-${link.color} boxShadow`}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" className={`bi bi-${link.name}`} viewBox="0 0 16 16">
                                     <path d={link.svgD}></path>
                                 </svg>

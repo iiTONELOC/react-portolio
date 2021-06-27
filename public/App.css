@@ -34,9 +34,9 @@
 .lightGray {
 	background-color: rgb(214, 214, 214);
 }
-#root {
+/* #root {
 	min-width: 100vw;
-}
+} */
 
 .mainContainer {
 	min-height: fit-content;
@@ -94,6 +94,14 @@
 .contactForm {
 	border: 2px solid rgb(14, 26, 14);
 	border-radius: 10px;
+}
+.submit {
+	border: none;
+	border-radius: 8px;
+	font-size: 20px;
+}
+.submit:hover {
+	background-color: rgba(208, 121, 227, 0.767);
 }
 
 /* END CONTACT */
