@@ -8,6 +8,8 @@ export default function MyNav(props) {
     // pass the nav tabs down from App so we can control what renders
     const {
         tabs = [],
+        setCurrentView,
+        currentView,
     } = props;
     // handles the nav link highlighting when the mouse is over the selection
     const changeButtonColor = (e, remove) => {
@@ -29,7 +31,8 @@ export default function MyNav(props) {
                             onPointerOut={(e) => { changeButtonColor(e, true) }}
                             href={`#${tabs.name}`}
                             key={tabs.name}
-                            className="navLink text-white"
+                            className={`navLink text-white ${currentView.name === tabs.name && 'navActive'}`}
+                            onClick={() => { setCurrentView(tabs) }}
                         >{tabs.name}</Nav.Link>
                     ))}
                 </Nav>

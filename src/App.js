@@ -15,12 +15,18 @@ function App() {
     { name: 'Contact' },
     { name: 'Resume' },
   ]);
+  const [currentView, setCurrentView] = useState(tabs[0]);
   return (
     <main>
       <div className='container-fluid m-0 p-0 mainContainer'>
-        <MyNav tabs={tabs}></MyNav>
+        <MyNav
+          tabs={tabs}
+          setCurrentView={setCurrentView}
+          currentView={currentView}
+        >
+        </MyNav>
         <About></About>
-        <Projects></Projects>
+        {currentView.name === "Projects" && <Projects></Projects>}
         {/* CONTACT */}
         {/* RESUME */}
       </div >

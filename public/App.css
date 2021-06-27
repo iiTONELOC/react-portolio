@@ -50,6 +50,10 @@
 .navTitle {
 	font-size: 30px;
 }
+.navActive {
+	background-color: rgba(150, 11, 182, 0.767);
+	border-radius: 5px;
+}
 /* END NAV */
 
 /* ABOUT */
