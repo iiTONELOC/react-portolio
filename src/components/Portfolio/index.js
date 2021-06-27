@@ -15,7 +15,7 @@ export default function Projects() {
             <div className='d-flex flex-wrap flex-row justify-content-center'>
                 {works.map((project) => (
                     <Accordion
-                        className=' m-1 p-1 col-11 col-sm-8 col-md-5 col-lg-4 col-xl-3 projectCard'
+                        className=' m-1 p-1 col-11 col-sm-8 col-md-6 col-lg-5 col-xl-4 projectCard'
                         key={project.name}
 
                     >
@@ -35,18 +35,28 @@ export default function Projects() {
                                     className='d-flex flex-wrap justify-content-start'
                                 >
                                     <div className='col-12 projectTitle mb-2 border-dark border-bottom '>{project.name}</div>
-                                    <Card.Text className='col-12'>
+                                    <div className='col-12 d-flex flex-wrap justify-content-start mt-2'>
                                         {project.tech.map((el, idx) => (
-                                            <Badge
-                                                variant={el.variant}
-                                                key={el.variant + idx}
-                                                className={`${el.bg ? `${el.bg}  p-2 m-1 text-white textShadow boxShadow` : ` text-white p-2 mb-1 m-1 textShadow boxShadow`}`}
+                                            <div key={'div' + idx}
+                                                className='col-12 d-flex justify-content-start align-items-start'
                                             >
-                                                {el.icon ? el.icon : el.name}
-                                            </Badge>
+                                                <Badge
+                                                    variant={el.variant}
+                                                    key={el.variant + idx}
+                                                    className={`${el.bg ? `${el.bg}  p-2 my-1 mr-1 text-white textShadow boxShadow` : ` text-white p-2 my-1 mr-1 textShadow boxShadow`}`}
+                                                >
+                                                    {el.icon ? el.icon : el.name}
+                                                </Badge>
+                                                <span className={`
+                                                ${el.bg ? `${el.bg !== 'white' ? `${el.bg} text-white` : el.bg} m-1   roundedIcon boxShadow` : `bg-${`${el.variant !== 'light' ? `${el.variant} text-white` : el.variant}`} m-1   roundedIcon boxShadow d-flex flex-wrap justify-content-center`}`}>
+                                                    <p className='p-2 d-flex'>{el.name}</p>
+                                                </span>
+                                            </div>
+
+
                                         ))}
-                                    </Card.Text>
-                                    <div className='col-12 d-flex flex-wrap justify-content-start mt-5'>
+                                    </div>
+                                    <div className='col-12 d-flex flex-wrap justify-content-start mt-2'>
                                         <Accordion.Collapse
                                             eventKey={wrapper}
                                             ref={wrapper}

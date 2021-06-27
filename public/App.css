@@ -82,8 +82,12 @@
 	width: 50px;
 }
 .nodeIcon {
-	height: 25px;
-	width: 25px;
+	height: 24px;
+	width: 24px;
+}
+.roundedIcon {
+	border-radius: 5px;
+	height: 40px;
 }
 .projectTitle {
 	font-size: 30px;

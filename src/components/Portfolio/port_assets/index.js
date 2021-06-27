@@ -17,7 +17,7 @@ const works = [
         url: `https://sports-buzz.herokuapp.com`,
         screenshot: sB,
         tech: [
-            { name: 'Express-Handlebars', variant: 'light', bg: '', icon: icon.handleIcon },
+            { name: 'Express-Hbs', variant: 'light', bg: '', icon: icon.handleIcon },
             { name: 'Bootstrap', variant: '', bg: 'purple', icon: icon.bootStrap },
             { name: 'JavaScript', variant: 'dark', bg: '', icon: icon.jsIcon },
             { name: 'Sequelize', variant: 'light', bg: '', icon: icon.sqlIze },
@@ -29,20 +29,8 @@ const works = [
         url: `https://i-dash.herokuapp.com`,
         screenshot: wD,
         tech: [
-            { name: 'Express-Handlebars', variant: 'light', bg: '', icon: icon.handleIcon },
+            { name: 'Express-Hbs', variant: 'light', bg: '', icon: icon.handleIcon },
             { name: 'Bootstrap', variant: '', bg: 'purple', icon: icon.bootStrap },
-            { name: 'JavaScript', variant: 'dark', bg: '', icon: icon.jsIcon },
-            { name: 'Sequelize', variant: 'light', bg: '', icon: icon.sqlIze },
-        ]
-    },
-    {
-        name: 'Rent a Puppy',
-        repo: `https://github.com/cremeansemily/Rent-A-Puppy`,
-        url: 'https://pimp-my-puppy.herokuapp.com/',
-        screenshot: rP,
-        tech: [
-            { name: 'Express-Handlebars', variant: 'light', bg: '', icon: icon.handleIcon },
-            { name: 'TailwindsCSS', variant: 'secondary', icon: icon.twCssIcon },
             { name: 'JavaScript', variant: 'dark', bg: '', icon: icon.jsIcon },
             { name: 'Sequelize', variant: 'light', bg: '', icon: icon.sqlIze },
         ]
@@ -58,16 +46,7 @@ const works = [
             { name: 'Inquirer', variant: 'dark', icon: icon.inquirerIcon },
         ]
     },
-    {
-        name: 'README Generator',
-        repo: `${githubRepo}readme-generator/`,
-        url: `${githubRepo}readme-generator/`,
-        screenshot: rG,
-        tech: [
-            { name: 'NodeJS', variant: '', bg: 'lightGreen', icon: icon.nodeIcon },
-            { name: 'Inquirer', variant: 'dark', icon: icon.inquirerIcon },
-        ]
-    },
+
     {
         name: 'Bored in the House',
         repo: `${githubRepo}covid-master/`,
@@ -79,5 +58,29 @@ const works = [
             { name: 'JavaScript', variant: 'dark', bg: '', icon: icon.jsIcon },
         ]
     },
+    {
+        name: 'README Generator',
+        repo: `${githubRepo}readme-generator/`,
+        url: `${githubRepo}readme-generator/`,
+        screenshot: rG,
+        tech: [
+            { name: 'NodeJS', variant: '', bg: 'lightGreen', icon: icon.nodeIcon },
+            { name: 'Inquirer', variant: 'dark', icon: icon.inquirerIcon },
+        ]
+    },
+
+    {
+        name: 'Rent a Puppy',
+        repo: `https://github.com/cremeansemily/Rent-A-Puppy`,
+        url: 'https://pimp-my-puppy.herokuapp.com/',
+        screenshot: rP,
+        tech: [
+            { name: 'Express-Hbs', variant: 'light', bg: '', icon: icon.handleIcon },
+            { name: 'TailwindsCSS', variant: 'secondary', icon: icon.twCssIcon },
+            { name: 'JavaScript', variant: 'dark', bg: '', icon: icon.jsIcon },
+            { name: 'Sequelize', variant: 'light', bg: '', icon: icon.sqlIze },
+        ]
+    },
+
 ]
 export default works;
