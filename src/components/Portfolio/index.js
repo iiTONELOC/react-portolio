@@ -35,10 +35,10 @@ export default function Projects() {
                                     className='d-flex flex-wrap justify-content-start'
                                 >
                                     <div className='col-12 projectTitle mb-2 border-dark border-bottom '>{project.name}</div>
-                                    <div className='col-12 d-flex flex-wrap justify-content-start mt-2'>
+                                    <div className='col-12 d-flex flex-wrap justify-content-start mt-2 '>
                                         {project.tech.map((el, idx) => (
                                             <div key={'div' + idx}
-                                                className='col-12 d-flex justify-content-start align-items-start'
+                                                className='col-12 d-flex justify-content-start align-items-start pulseHoverOnly'
                                             >
                                                 <Badge
                                                     variant={el.variant}
@@ -93,7 +93,7 @@ export default function Projects() {
                                         </Accordion.Collapse>
                                     </div>
                                 </Card.Body>
-                                <div className='col-12 d-flex flex-wrap justify-content-end'>
+                                <div className='col-12 d-flex flex-wrap justify-content-end pulseHoverOnly'>
                                     <Badge
                                         variant=''
                                         className='text-white p-2 mb-1 textShadow boxShadow lightGreen'

@@ -35,7 +35,7 @@ export default function MyNav(props) {
                             onPointerOut={(e) => { changeButtonColor(e, true) }}
                             href={`#${tabs.name}`}
                             key={tabs.name}
-                            className={`navLink text-white ${currentView.name === tabs.name && 'navActive'}`}
+                            className={`navLink text-white ${currentView.name === tabs.name && 'navActive pulse'}`}
                             onClick={() => { setCurrentView(tabs) }}
                         >{tabs.name}</Nav.Link>
                     ))}

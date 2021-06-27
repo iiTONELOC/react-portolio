@@ -3,6 +3,7 @@ import MyNav from './components/Nav';
 import About from './components/About';
 import Projects from './components/Portfolio';
 import Contact from './components/Contact';
+import Resume from './components/Resume';
 import Footer from './components/Footer';
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -28,10 +29,8 @@ function App() {
         </MyNav>
         {!currentView ? <About></About> :
           currentView.name === "Projects" ? <Projects></Projects> :
-            currentView.name === "Contact" ? <Contact></Contact> : <About></About>}
-
-        {/* CONTACT */}
-        {/* RESUME */}
+            currentView.name === "Contact" ? <Contact></Contact> :
+              currentView.name === "Resume" ? <Resume></Resume> : <About></About>}
       </div >
       <Footer></Footer>
     </main>
