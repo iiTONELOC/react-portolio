@@ -24,6 +24,18 @@ const works = [
         ]
     },
     {
+        name: 'Rent a Puppy',
+        repo: `https://github.com/cremeansemily/Rent-A-Puppy`,
+        url: 'https://pimp-my-puppy.herokuapp.com/',
+        screenshot: rP,
+        tech: [
+            { name: 'Express-Hbs', variant: 'light', bg: '', icon: icon.handleIcon },
+            { name: 'TailwindsCSS', variant: 'secondary', icon: icon.twCssIcon },
+            { name: 'JavaScript', variant: 'dark', bg: '', icon: icon.jsIcon },
+            { name: 'Sequelize', variant: 'light', bg: '', icon: icon.sqlIze },
+        ]
+    },
+    {
         name: 'Weather Dashboard',
         repo: `${githubRepo}dashboard`,
         url: `https://i-dash.herokuapp.com`,
@@ -32,7 +44,6 @@ const works = [
             { name: 'Express-Hbs', variant: 'light', bg: '', icon: icon.handleIcon },
             { name: 'Bootstrap', variant: '', bg: 'purple', icon: icon.bootStrap },
             { name: 'JavaScript', variant: 'dark', bg: '', icon: icon.jsIcon },
-            { name: 'Sequelize', variant: 'light', bg: '', icon: icon.sqlIze },
         ]
     },
     {
@@ -69,18 +80,7 @@ const works = [
         ]
     },
 
-    {
-        name: 'Rent a Puppy',
-        repo: `https://github.com/cremeansemily/Rent-A-Puppy`,
-        url: 'https://pimp-my-puppy.herokuapp.com/',
-        screenshot: rP,
-        tech: [
-            { name: 'Express-Hbs', variant: 'light', bg: '', icon: icon.handleIcon },
-            { name: 'TailwindsCSS', variant: 'secondary', icon: icon.twCssIcon },
-            { name: 'JavaScript', variant: 'dark', bg: '', icon: icon.jsIcon },
-            { name: 'Sequelize', variant: 'light', bg: '', icon: icon.sqlIze },
-        ]
-    },
+
 
 ]
 export default works;

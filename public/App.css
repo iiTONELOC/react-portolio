@@ -26,13 +26,16 @@
 	background-color: rgb(112, 199, 117);
 }
 .purple {
-	background-color: purple;
+	background-color: rgb(87, 0, 128);
 }
 .yellow {
-	background-color: rgb(230, 180, 54);
+	background-color: rgb(214, 156, 123);
 }
 .lightGray {
 	background-color: rgb(214, 214, 214);
+}
+.black {
+	background-color: rgb(0, 0, 0);
 }
 /* #root {
 	min-width: 100vw;
@@ -85,6 +88,7 @@
 .nodeIcon {
 	height: 24px;
 	width: 24px;
+	object-fit: contain;
 }
 .roundedIcon {
 	border-radius: 5px;
@@ -117,6 +121,12 @@
 }
 .downloadIcon:hover {
 	background-color: rgb(112, 199, 117);
+}
+.viewIcon {
+	border-radius: 5px;
+}
+.viewIcon:hover {
+	background-color: rgba(208, 121, 227, 0.767);
 }
 /* END RESUME */
 /* @media */

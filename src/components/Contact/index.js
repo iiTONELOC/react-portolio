@@ -43,13 +43,14 @@ export default function Contact() {
                         !message && !email && !name ? alert('Fields can not be blank!') :
                             !isValid ? alert('Your email is invalid') :
                                 refresh();
-
-
     }
 
     return (
         <section className='col-12 d-flex flex-wrap justify-content-center mt-5'>
+
             <Form className='col-11 col-sm-11 col-md-6 col-lg-5 col-xl-4 lightGray contactForm p-5 boxShadow'>
+                <h1 className='text-white textShadow'>Contact me</h1>
+
                 <Form.Group controlId="nameControl">
                     <Form.Label><i className="bi bi-person-square" style={{ fontSize: '1.5rem', color: 'rebeccaPurple' }}></i><br></br> </Form.Label>
                     <Form.Control
@@ -73,7 +74,7 @@ export default function Contact() {
                     />
                 </Form.Group>
                 <Form.Group controlId="messageControl">
-                    <Form.Label> <i className="bi bi-chat-text" style={{ fontSize: '1.5rem', color: 'rebeccaPurple' }}></i><br></br>  </Form.Label>
+                    <Form.Label> <i className="bi bi-pencil-square" style={{ fontSize: '1.5rem', color: 'rebeccaPurple' }}></i><br></br>  </Form.Label>
                     <Form.Control
                         className='formLabel'
                         defaultValue={message}
