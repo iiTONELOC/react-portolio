@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
 import Icons from '../../assets/icons';
 import myResume from '../../assets/resume.pdf';
-import Badge from 'react-bootstrap/Badge'
+import RenderIcon from '../Icons';
 const icon = Icons();
 
 
@@ -12,12 +12,12 @@ export default function Resume() {
         {
             name: 'Front End',
             skills: [
-                { name: 'HTML', variant: 'secondary', bg: '', icon: icon.htmlIcon },
-                { name: 'CSS', variant: 'secondary', bg: '', icon: icon.cssIcon },
-                { name: 'Bootstrap', variant: 'secondary', bg: '', icon: icon.bootStrap },
-                { name: 'Tailwinds', variant: 'secondary', bg: '', icon: icon.twCssIcon },
-                { name: 'JavaScript', variant: 'secondary', bg: '', icon: icon.jsIcon },
-                { name: 'jQuery', variant: 'secondary', bg: '', icon: icon.jQuery },
+                { name: 'HTML', variant: '', bg: 'black', icon: icon.htmlIcon },
+                { name: 'CSS', variant: '', bg: 'rebeccaPurple', icon: icon.cssIcon },
+                { name: 'Bootstrap', variant: '', bg: 'purple', icon: icon.bootStrap },
+                { name: 'Tailwinds', variant: '', bg: 'rebeccaPurple', icon: icon.twCssIcon },
+                { name: 'JavaScript', variant: 'dark', bg: '', icon: icon.jsIcon },
+                { name: 'jQuery', variant: 'light', bg: '', icon: icon.jQuery },
                 { name: 'React', variant: 'secondary', icon: icon.react },
 
             ]
@@ -25,13 +25,13 @@ export default function Resume() {
         {
             name: 'Back End',
             skills: [
-                { name: 'APIs', variant: 'secondary', bg: '', icon: icon.apiIcon },
-                { name: 'Node.js', variant: 'secondary', bg: '', icon: icon.nodeIcon },
-                { name: 'Express.js', variant: 'secondary', bg: '', icon: icon.express },
-                { name: 'MySQL', variant: 'secondary', icon: icon.mysqlIcon },
-                { name: 'Sequelize', variant: 'secondary', bg: '', icon: icon.sqlIze },
-                { name: 'MongoDB', variant: 'secondary', bg: '', icon: icon.mongo },
-                { name: 'Mongoose', variant: 'secondary', bg: '', icon: icon.mongoose },
+                { name: 'APIs', variant: '', bg: 'orange', icon: icon.apiIcon },
+                { name: 'Node.js', variant: '', bg: 'lightGreen', icon: icon.nodeIcon },
+                { name: 'Express.js', variant: '', bg: 'lightGreen', icon: icon.express },
+                { name: 'MySQL', variant: 'dark', icon: icon.mysqlIcon },
+                { name: 'Sequelize', variant: 'light', bg: '', icon: icon.sqlIze },
+                { name: 'MongoDB', variant: '', bg: 'black', icon: icon.mongo },
+                { name: 'Mongoose', variant: 'light', bg: '', icon: icon.mongoose },
             ]
         }
     ]
@@ -45,10 +45,10 @@ export default function Resume() {
                             <h1 className='headingTitle mt-lg-5 text-center'>Resume</h1>
                         </header>
                         <div className='d-flex'>
-                            <a href={myResume} download><span className='rebeccaPurple d-flex justify-content-center p-2 border downloadIcon boxShadow ml-3 pulse'>
+                            <a href={myResume} download><span className='rebeccaPurple d-flex justify-content-center p-2 border downloadIcon boxShadow ml-3 pulseHoverOnly'>
                                 <i className="bi bi-file-earmark-pdf-fill" style={{ fontSize: '2.5rem', color: 'white' }}></i> <br></br> <p className='text-white mt-3'>Download</p>
                             </span></a>
-                            <a href={myResume} ><span className='lightGreen d-flex justify-content-center p-2 border viewIcon boxShadow ml-3 pulse'>
+                            <a href={myResume} ><span className='lightGreen d-flex justify-content-center p-2 border viewIcon boxShadow ml-3 pulseHoverOnly'>
                                 <i className="bi bi-search" style={{ fontSize: '2.5rem', color: 'white' }}></i> <br></br> <p className='text-white mt-3'>View</p>
                             </span></a>
                         </div>
@@ -64,22 +64,12 @@ export default function Resume() {
                             <ul className='mt-5 col-6 d-flex flex-column justify-content-center align-items-center list-unstyled' key={el.name}>
                                 <li> <h2>{el.name}</h2>
                                     <ul className='list-unstyled '>
-                                        {el.skills.map((skill) => (
+                                        {el.skills.map((skill, idx) => (
                                             <li className='m-1' key={skill.name}>
                                                 <div key={'div'}
-                                                    className='col-12 d-flex justify-content-start align-items-start pulseHoverOnly'
+                                                    className='col-12 d-flex justify-content-start align-items-start pulse'
                                                 >
-                                                    <Badge
-                                                        variant={skill.variant}
-                                                        key={skill.name}
-                                                        className={`${skill.bg ? `${skill.bg}  p-2 my-1 mr-1 text-white textShadow boxShadow` : ` text-white p-2 my-1 mr-1 textShadow boxShadow`}`}
-                                                    >
-                                                        {skill.icon ? skill.icon : skill.name}
-                                                    </Badge>
-                                                    <span className={`
-                                                ${skill.bg ? `${skill.bg !== 'white' ? `${skill.bg} text-white` : skill.bg} m-1   roundedIcon boxShadow` : `bg-${`${skill.variant !== 'light' ? `${skill.variant} text-white` : skill.variant}`} m-1   roundedIcon boxShadow d-flex flex-wrap justify-content-center`}`}>
-                                                        <p className='p-2 d-flex'>{skill.name}</p>
-                                                    </span>
+                                                    {RenderIcon(skill, idx)}
                                                 </div>
                                             </li>
                                         ))}
