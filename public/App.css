@@ -52,6 +52,7 @@
 .navLink {
 	text-shadow: 1px 1px 2px black;
 	font-size: 1.5rem;
+	margin: 3px;
 }
 .navTitle {
 	font-size: 30px;
@@ -120,7 +121,7 @@
 	border-radius: 5px;
 }
 .downloadIcon:hover {
-	background-color: rgb(112, 199, 117);
+	background-color: rgba(148, 35, 173, 0.767);
 }
 .viewIcon {
 	border-radius: 5px;
