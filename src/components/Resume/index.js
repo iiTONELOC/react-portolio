@@ -8,33 +8,7 @@ const icon = Icons();
 
 
 export default function Resume() {
-    const skills = [
-        {
-            name: 'Front End',
-            skills: [
-                { name: 'HTML', variant: '', bg: 'black', icon: icon.htmlIcon },
-                { name: 'CSS', variant: '', bg: 'rebeccaPurple', icon: icon.cssIcon },
-                { name: 'Bootstrap', variant: '', bg: 'purple', icon: icon.bootStrap },
-                { name: 'Tailwinds', variant: '', bg: 'rebeccaPurple', icon: icon.twCssIcon },
-                { name: 'JavaScript', variant: 'dark', bg: '', icon: icon.jsIcon },
-                { name: 'jQuery', variant: 'light', bg: '', icon: icon.jQuery },
-                { name: 'React', variant: 'secondary', icon: icon.react },
 
-            ]
-        },
-        {
-            name: 'Back End',
-            skills: [
-                { name: 'APIs', variant: '', bg: 'orange', icon: icon.apiIcon },
-                { name: 'Node.js', variant: '', bg: 'lightGreen', icon: icon.nodeIcon },
-                { name: 'Express.js', variant: '', bg: 'lightGreen', icon: icon.express },
-                { name: 'MySQL', variant: 'dark', icon: icon.mysqlIcon },
-                { name: 'Sequelize', variant: 'light', bg: '', icon: icon.sqlIze },
-                { name: 'MongoDB', variant: '', bg: 'black', icon: icon.mongo },
-                { name: 'Mongoose', variant: 'light', bg: '', icon: icon.mongoose },
-            ]
-        }
-    ]
     return (
         <div className="jumbotron jumbotron-fluid m-0 p-2 bg-white">
             <div className="container mt-1 p-0 ">
@@ -52,13 +26,7 @@ export default function Resume() {
                                 <i className="bi bi-search" style={{ fontSize: '2.5rem', color: 'white' }}></i> <br></br> <p className='text-white mt-3'>View</p>
                             </span></a>
                         </div>
-
-
-
-
                     </Col>
-                    {/* CONTENT */}
-                    {/* IMAGE/AVATAR */}
                     <Col xs={{ span: 10, order: 2 }} className=' d-flex flex-wrap justify-content-center'>
                         {skills.map((el) => (
                             <ul className='mt-5 col-6 d-flex flex-column justify-content-center align-items-center list-unstyled' key={el.name}>
@@ -75,8 +43,6 @@ export default function Resume() {
                                         ))}
                                     </ul>
                                 </li>
-
-
                             </ul>
                         ))}
                     </Col>
@@ -85,3 +51,31 @@ export default function Resume() {
         </div >
     )
 }
+
+const skills = [
+    {
+        name: 'Front End',
+        skills: [
+            { name: 'HTML', variant: '', bg: 'black', icon: icon.htmlIcon },
+            { name: 'CSS', variant: '', bg: 'rebeccaPurple', icon: icon.cssIcon },
+            { name: 'Bootstrap', variant: '', bg: 'purple', icon: icon.bootStrap },
+            { name: 'Tailwinds', variant: '', bg: 'rebeccaPurple', icon: icon.twCssIcon },
+            { name: 'JavaScript', variant: 'dark', bg: '', icon: icon.jsIcon },
+            { name: 'jQuery', variant: 'light', bg: '', icon: icon.jQuery },
+            { name: 'React', variant: 'secondary', icon: icon.react },
+
+        ]
+    },
+    {
+        name: 'Back End',
+        skills: [
+            { name: 'APIs', variant: '', bg: 'orange', icon: icon.apiIcon },
+            { name: 'Node.js', variant: '', bg: 'lightGreen', icon: icon.nodeIcon },
+            { name: 'Express.js', variant: '', bg: 'lightGreen', icon: icon.express },
+            { name: 'MySQL', variant: 'dark', icon: icon.mysqlIcon },
+            { name: 'Sequelize', variant: 'light', bg: '', icon: icon.sqlIze },
+            { name: 'MongoDB', variant: '', bg: 'black', icon: icon.mongo },
+            { name: 'Mongoose', variant: 'light', bg: '', icon: icon.mongoose },
+        ]
+    }
+]

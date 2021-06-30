@@ -9,7 +9,6 @@ import RenderIcon from '../Icons';
 
 export default function Projects() {
     const wrapper = React.createRef();
-
     return (
         <section className='mt-3 p-3 d-flex flex-wrap justify-content-center'>
             <h1> Projects </h1>
@@ -18,7 +17,6 @@ export default function Projects() {
                     <Accordion
                         className=' m-1 p-1 col-11 col-sm-8 col-md-6 col-lg-5 col-xl-4 projectCard'
                         key={project.name}
-
                     >
                         <Card
                             className='bg-light border border-success shadow-lg'
@@ -41,12 +39,9 @@ export default function Projects() {
                                         </span>
                                         <span className='col-12 d-flex flex-wrap  justify-content-start'>
                                             {project.tech.map((el, idx) => RenderIcon(el, idx))}
-
                                         </span>
-
                                     </div>
                                     <div className='col-12 d-flex flex-wrap justify-content-start mt-2 '>
-
                                     </div>
                                     <div className='col-12 d-flex flex-wrap justify-content-start mt-2'>
                                         <Accordion.Collapse
@@ -96,14 +91,11 @@ export default function Projects() {
                                         More Info
                                     </Badge>
                                 </div>
-
-
                             </Accordion.Toggle>
                         </Card>
                     </Accordion>
                 ))}
             </div>
         </section>
-
     )
 }

@@ -1,11 +1,20 @@
 :root {
 	/* COLORS */
 	--light-gray: rgb(214, 214, 214);
+	--light-green: rgb(112, 199, 117);
+	--hover-Purple: rgba(208, 121, 227, 0.767);
 
 	/* PAGE GLOBALS */
 	/* background-color:var(--light-gray); */
 	font-family: 'Roboto', sans-serif;
 }
+.boxShadow {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 8px;
+}
+.textShadow {
+	text-shadow: 1px 1px 2px black;
+}
+
 /* COLOR CLASSES TO CHANGE BOOTSTRAPS */
 .orange {
 	background-color: chocolate;
@@ -16,14 +25,8 @@
 .lightBlue {
 	background-color: rgb(56, 202, 238);
 }
-.textShadow {
-	text-shadow: 1px 1px 2px black;
-}
-.boxShadow {
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 8px;
-}
 .lightGreen {
-	background-color: rgb(112, 199, 117);
+	background-color: var(--light-green);
 }
 .purple {
 	background-color: rgb(87, 0, 128);
@@ -41,13 +44,9 @@
 	background-color: chocolate;
 }
 
-.mainContainer {
-	min-height: fit-content;
-}
 /* NAV */
 .navBar {
-	/* width: 100%; */
-	background-color: rgb(112, 199, 117);
+	background-color: var(--light-green);
 }
 .navLink {
 	text-shadow: 1px 1px 2px black;
@@ -99,13 +98,13 @@
 	font-size: 30px;
 }
 .view:hover {
-	background-color: rgba(208, 121, 227, 0.767);
+	background-color: var(--hover-purple);
 }
 /* END PROJECT */
 
 /* CONTACT */
 .contactForm {
-	border: 2px solid rgb(112, 199, 117);
+	border: 2px solid var(--light-green);
 	border-radius: 10px;
 }
 .submit {
@@ -114,7 +113,7 @@
 	font-size: 20px;
 }
 .submit:hover {
-	background-color: rgba(208, 121, 227, 0.767);
+	background-color: var(--hover-purple);
 }
 
 /* END CONTACT */
@@ -124,13 +123,13 @@
 	border-radius: 5px;
 }
 .downloadIcon:hover {
-	background-color: rgba(148, 35, 173, 0.767);
+	background-color: var(--hover-Purple);
 }
 .viewIcon {
 	border-radius: 5px;
 }
 .viewIcon:hover {
-	background-color: rgba(208, 121, 227, 0.767);
+	background-color: var(--hover-purple);
 }
 /* END RESUME */
 /* @media */
