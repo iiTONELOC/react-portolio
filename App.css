@@ -69,6 +69,8 @@
 .avatar {
 	object-fit: cover;
 	object-position: center center;
+	width: 265px;
+	height: 280px;
 }
 
 /* END ABOUT */
