@@ -34,7 +34,7 @@ export default function Footer() {
                         <Nav.Link
                             href={link.url}
                             target='_blank'
-                            rel='noreopener'
+                            rel='noopener'
                             key={link.name}
                         >
                             <button type="button" className={`btn btn-${link.color} boxShadow pulseHoverOnly`} ariaLabel={link.name}>
