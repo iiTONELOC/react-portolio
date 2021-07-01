@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/github.io/react-portolio/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/github.io/react-portolio/static/js/main.f962dbdc.chunk.js",
+    "main.js.map": "/github.io/react-portolio/static/js/main.f962dbdc.chunk.js.map",
+    "runtime-main.js": "/github.io/react-portolio/static/js/runtime-main.ec1d97a8.js",
+    "runtime-main.js.map": "/github.io/react-portolio/static/js/runtime-main.ec1d97a8.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/github.io/react-portolio/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.0d10606b.chunk.js": "/github.io/react-portolio/static/js/2.0d10606b.chunk.js",
+    "static/js/2.0d10606b.chunk.js.map": "/github.io/react-portolio/static/js/2.0d10606b.chunk.js.map",
+    "static/js/3.0bc40cf6.chunk.js": "/github.io/react-portolio/static/js/3.0bc40cf6.chunk.js",
+    "static/js/3.0bc40cf6.chunk.js.map": "/github.io/react-portolio/static/js/3.0bc40cf6.chunk.js.map",
+    "index.html": "/github.io/react-portolio/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/github.io/react-portolio/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.6dea0f05.chunk.css.map": "/github.io/react-portolio/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.0d10606b.chunk.js.LICENSE.txt": "/github.io/react-portolio/static/js/2.0d10606b.chunk.js.LICENSE.txt",
+    "static/media/boredinthehousegif.1306583d.gif": "/github.io/react-portolio/static/media/boredinthehousegif.1306583d.gif",
+    "static/media/employee.7f53f2e9.jpg": "/github.io/react-portolio/static/media/employee.7f53f2e9.jpg",
+    "static/media/puppy.cec8fc0e.png": "/github.io/react-portolio/static/media/puppy.cec8fc0e.png",
+    "static/media/resume.64fafcc2.pdf": "/github.io/react-portolio/static/media/resume.64fafcc2.pdf",
+    "static/media/screenshot.6117ef22.gif": "/github.io/react-portolio/static/media/screenshot.6117ef22.gif",
+    "static/media/sportsbuzz.f4f7eabd.png": "/github.io/react-portolio/static/media/sportsbuzz.f4f7eabd.png",
+    "static/media/weather.9dfcad5a.png": "/github.io/react-portolio/static/media/weather.9dfcad5a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ec1d97a8.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.0d10606b.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.f962dbdc.chunk.js"
+  ]
+}
