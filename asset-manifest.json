@@ -1,15 +1,13 @@
 {
   "files": {
     "main.css": "/react-portolio/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/react-portolio/static/js/main.4a28c1a3.chunk.js",
-    "main.js.map": "/react-portolio/static/js/main.4a28c1a3.chunk.js.map",
-    "runtime-main.js": "/react-portolio/static/js/runtime-main.1b882d79.js",
-    "runtime-main.js.map": "/react-portolio/static/js/runtime-main.1b882d79.js.map",
+    "main.js": "/react-portolio/static/js/main.2e6b86c9.chunk.js",
+    "main.js.map": "/react-portolio/static/js/main.2e6b86c9.chunk.js.map",
+    "runtime-main.js": "/react-portolio/static/js/runtime-main.eb06dfad.js",
+    "runtime-main.js.map": "/react-portolio/static/js/runtime-main.eb06dfad.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/react-portolio/static/css/2.4c97ca4f.chunk.css",
     "static/js/2.0d10606b.chunk.js": "/react-portolio/static/js/2.0d10606b.chunk.js",
     "static/js/2.0d10606b.chunk.js.map": "/react-portolio/static/js/2.0d10606b.chunk.js.map",
-    "static/js/3.0bc40cf6.chunk.js": "/react-portolio/static/js/3.0bc40cf6.chunk.js",
-    "static/js/3.0bc40cf6.chunk.js.map": "/react-portolio/static/js/3.0bc40cf6.chunk.js.map",
     "index.html": "/react-portolio/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/react-portolio/static/css/2.4c97ca4f.chunk.css.map",
     "static/css/main.6dea0f05.chunk.css.map": "/react-portolio/static/css/main.6dea0f05.chunk.css.map",
@@ -23,10 +21,10 @@
     "static/media/weather.9dfcad5a.png": "/react-portolio/static/media/weather.9dfcad5a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.1b882d79.js",
+    "static/js/runtime-main.eb06dfad.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.0d10606b.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.4a28c1a3.chunk.js"
+    "static/js/main.2e6b86c9.chunk.js"
   ]
 }
