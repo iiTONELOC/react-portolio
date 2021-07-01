@@ -37,8 +37,8 @@ export default function Footer() {
                             rel='noreopener'
                             key={link.name}
                         >
-                            <button type="button" className={`btn btn-${link.color} boxShadow pulseHoverOnly`}>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" className={`bi bi-${link.name}`} viewBox="0 0 16 16">
+                            <button type="button" className={`btn btn-${link.color} boxShadow pulseHoverOnly`} ariaLabel={link.name}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" className={`bi bi-${link.name}`} viewBox="0 0 16 16" alt={link.name}>
                                     <path d={link.svgD}></path>
                                 </svg>
                             </button>

@@ -16,8 +16,8 @@ export default function About() {
                         </p>
                     </Col>
                     {/* IMAGE/AVATAR */}
-                    <Col xs={{ span: 10, order: 2 }} className='avatar d-flex justify-content-center'>
-                        <img src='https://avataaars.io/?avatarStyle=Transparent&topType=NoHair&accessoriesType=Prescription02&facialHairType=BeardLight&facialHairColor=BrownDark&clotheType=BlazerShirt&eyeType=Default&eyebrowType=RaisedExcitedNatural&mouthType=Default&skinColor=Pale'
+                    <Col xs={{ span: 10, order: 2 }} className=' d-flex justify-content-center'>
+                        <img className='avatar' src='https://avataaars.io/?avatarStyle=Transparent&topType=NoHair&accessoriesType=Prescription02&facialHairType=BeardLight&facialHairColor=BrownDark&clotheType=BlazerShirt&eyeType=Default&eyebrowType=RaisedExcitedNatural&mouthType=Default&skinColor=Pale'
 
                             alt='Avatar' />
                     </Col>
