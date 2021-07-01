@@ -22,8 +22,8 @@ function App() {
     document.title = `Anthony/${currentView.name.toLowerCase()}`
   }, [currentView])
   return (
-    <main>
-      <div className='container-fluid m-0 p-0 mainContainer'>
+    <main className='lightGray'>
+      <div className='container-fluid m-0 p-0'>
         <MyNav
           tabs={tabs}
           setCurrentView={setCurrentView}

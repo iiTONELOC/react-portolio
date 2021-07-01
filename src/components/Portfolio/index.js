@@ -19,22 +19,22 @@ export default function Projects() {
                         key={project.name}
                     >
                         <Card
-                            className='bg-light border border-success shadow-lg'
+                            className='bg-dark border border-success shadow-lg'
                         >
                             <Accordion.Toggle
                                 as={Card.Header}
                                 eventKey={wrapper}
                                 className='h-100' >
                                 <Card.Img
-                                    className='projectImage'
+                                    className='projectImage mt-1'
                                     variant="top"
                                     src={project.screenshot}
                                 />
                                 <Card.Body
                                     className='d-flex flex-wrap justify-content-start'
                                 >
-                                    <div className='col-12 d-flex flex-wrap justify-content-start projectTitle mb-2 border-dark border-bottom '>
-                                        <span className='col-12 d-flex flex-wrap justify-content-start'>
+                                    <div className='col-12 d-flex flex-wrap justify-content-start projectTitle mb-2 border-success border-bottom '>
+                                        <span className='col-12 d-flex flex-wrap justify-content-start text-white textShadow'>
                                             {project.name}
                                         </span>
                                         <span className='col-12 d-flex flex-wrap  justify-content-start'>
@@ -50,7 +50,7 @@ export default function Projects() {
                                         >
                                             <div >
                                                 <Button
-                                                    variant="primary"
+                                                    variant="success"
                                                     size="sm"
                                                     className='m-1'
                                                     href={project.url}

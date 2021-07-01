@@ -2,11 +2,12 @@
 	/* COLORS */
 	--light-gray: rgb(214, 214, 214);
 	--light-green: rgb(112, 199, 117);
-	--hover-Purple: rgba(208, 121, 227, 0.767);
+	--hover-purple: rgba(208, 121, 227, 0.767);
 
 	/* PAGE GLOBALS */
 	/* background-color:var(--light-gray); */
 	font-family: 'Roboto', sans-serif;
+	background-color: var(--light-gray);
 }
 .boxShadow {
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 8px;
@@ -43,7 +44,9 @@
 .orange {
 	background-color: chocolate;
 }
-
+.mainContainer {
+	background-color: var(--light-gray);
+}
 /* NAV */
 .navBar {
 	background-color: var(--light-green);
@@ -125,7 +128,7 @@
 	border-radius: 5px;
 }
 .downloadIcon:hover {
-	background-color: var(--hover-Purple);
+	background-color: var(--hover-purple);
 }
 .viewIcon {
 	border-radius: 5px;

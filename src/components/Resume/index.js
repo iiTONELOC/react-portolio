@@ -10,7 +10,7 @@ const icon = Icons();
 export default function Resume() {
 
     return (
-        <div className="jumbotron jumbotron-fluid m-0 p-2 bg-white">
+        <div className="container-fluid m-0 p-2 lightGray">
             <div className="container mt-1 p-0 ">
                 <Row className="d-flex flex-wrap justify-content-center p-3">
                     {/* HEADING */}
@@ -22,7 +22,7 @@ export default function Resume() {
                             <a href={myResume} download><span className='rebeccaPurple d-flex justify-content-center p-2 border downloadIcon boxShadow ml-3 pulseHoverOnly'>
                                 <i className="bi bi-file-earmark-pdf-fill" style={{ fontSize: '2.5rem', color: 'white' }}></i> <br></br> <p className='text-white mt-3'>Download</p>
                             </span></a>
-                            <a href={myResume} ><span className='lightGreen d-flex justify-content-center p-2 border viewIcon boxShadow ml-3 pulseHoverOnly'>
+                            <a href={myResume} target={'_blank'} rel='noreferrer'><span className='lightGreen d-flex justify-content-center p-2 border viewIcon boxShadow ml-3 pulseHoverOnly'>
                                 <i className="bi bi-search" style={{ fontSize: '2.5rem', color: 'white' }}></i> <br></br> <p className='text-white mt-3'>View</p>
                             </span></a>
                         </div>

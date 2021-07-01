@@ -48,11 +48,11 @@ export default function Contact() {
     return (
         <section className='col-12 d-flex flex-wrap justify-content-center mt-5'>
 
-            <Form className='col-11 col-sm-11 col-md-6 col-lg-5 col-xl-4 lightGray contactForm p-5 boxShadow'>
+            <Form className='col-11 col-sm-11 col-md-6 col-lg-5 col-xl-4 bg-dark contactForm p-5 boxShadow'>
                 <h1 className='text-white textShadow'>Let's get in touch!</h1>
 
                 <Form.Group controlId="nameControl">
-                    <Form.Label><i className="bi bi-person-square" style={{ fontSize: '1.5rem', color: 'rebeccaPurple' }}></i> Who are you? </Form.Label>
+                    <Form.Label><i className="bi bi-person-square" style={{ fontSize: '1.5rem', color: 'lightGreen' }}></i> <span className='text-white'>Who are you?</span> </Form.Label>
                     <Form.Control
                         className='formLabel'
                         type="text"
@@ -63,7 +63,7 @@ export default function Contact() {
                     />
                 </Form.Group>
                 <Form.Group controlId="emailControl">
-                    <Form.Label> <i className="bi bi-envelope-fill" style={{ fontSize: '1.5rem', color: 'rebeccaPurple' }}></i> What's your email? </Form.Label>
+                    <Form.Label> <i className="bi bi-envelope-fill" style={{ fontSize: '1.5rem', color: 'lightGreen' }}></i>  <span className='text-white'>What's your email?</span> </Form.Label>
                     <Form.Control
                         className='formLabel'
                         type="email"
@@ -74,7 +74,7 @@ export default function Contact() {
                     />
                 </Form.Group>
                 <Form.Group controlId="messageControl">
-                    <Form.Label> <i className="bi bi-pencil-square" style={{ fontSize: '1.5rem', color: 'rebeccaPurple' }}></i> Leave a message  </Form.Label>
+                    <Form.Label> <i className="bi bi-pencil-square" style={{ fontSize: '1.5rem', color: 'lightGreen' }}></i> <span className='text-white'>Leave a message</span>  </Form.Label>
                     <Form.Control
                         className='formLabel'
                         defaultValue={message}

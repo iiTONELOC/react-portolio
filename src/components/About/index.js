@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
 export default function About() {
     return (
-        <div className="jumbotron jumbotron-fluid m-0 p-2 bg-white">
+        <div className="container-fluid m-0 p-2 lightGray">
             <div className="container mt-1 p-0 ">
                 <Row className="d-flex flex-wrap justify-content-center p-3">
                     {/* HEADING */}

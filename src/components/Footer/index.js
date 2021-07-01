@@ -27,7 +27,7 @@ export default function Footer() {
     ]
 
     return (
-        <Container fluid className='footer mt-5'>
+        <Container fluid className='lightGray mt-5'>
             <Navbar className={'d-flex flex-wrap justify-content-center p-2'}>
                 <Nav className='d-flex flex-wrap justify-content-evenly'>
                     {contactLinks.map((link) => (
