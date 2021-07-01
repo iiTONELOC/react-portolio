@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import MyNav from './components/Nav';
 import About from './components/About';
 import Projects from './components/Portfolio';
@@ -18,6 +18,9 @@ function App() {
     { name: 'Resume' },
   ]);
   const [currentView, setCurrentView] = useState(tabs[0]);
+  useEffect(() => {
+    document.title = `Anthony/${currentView.name.toLowerCase()}`
+  }, [currentView])
   return (
     <main>
       <div className='container-fluid m-0 p-0 mainContainer'>
