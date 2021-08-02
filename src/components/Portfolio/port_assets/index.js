@@ -2,7 +2,7 @@ import sB from '../../../assets/project_screenshots/sportsbuzz.png';
 import bH from '../../../assets/project_screenshots/boredinthehousegif.gif';
 import rP from '../../../assets/project_screenshots/puppy.png';
 import wD from '../../../assets/project_screenshots/weather.png';
-import rG from '../../../assets/project_screenshots/screenshot.gif';
+import pS from '../../../assets/project_screenshots/proximo-screenshot.jpg';
 import eT from '../../../assets/project_screenshots/employee.jpg';
 import Icons from '../../../assets/icons';
 const githubUrl = 'https://iitoneloc.github.io/';
@@ -36,16 +36,16 @@ const works = [
         ]
     },
     {
-        name: 'Weather Dashboard',
-        repo: `${githubRepo}dashboard`,
-        url: `https://i-dash.herokuapp.com`,
-        screenshot: wD,
+        name: 'Proximo',
+        repo: `${githubRepo}proximo/`,
+        url: `https://blooming-wildwood-24520.herokuapp.com/`,
+        screenshot: pS,
         tech: [
-            { name: 'Express-Hbs', variant: 'light', bg: '', icon: icon.handleIcon },
-            { name: 'Bootstrap', variant: '', bg: 'purple', icon: icon.bootStrap },
+            { name: 'TailwindsCSS', variant: 'secondary', icon: icon.twCssIcon },
             { name: 'JavaScript', variant: 'dark', bg: '', icon: icon.jsIcon },
         ]
     },
+
     {
         name: 'Employee Tracker',
         repo: `${githubRepo}employee-tracker/`,
@@ -69,14 +69,16 @@ const works = [
             { name: 'JavaScript', variant: 'dark', bg: '', icon: icon.jsIcon },
         ]
     },
+
     {
-        name: 'README Generator',
-        repo: `${githubRepo}readme-generator/`,
-        url: `${githubRepo}readme-generator/`,
-        screenshot: rG,
+        name: 'Weather Dashboard',
+        repo: `${githubRepo}dashboard`,
+        url: `https://i-dash.herokuapp.com`,
+        screenshot: wD,
         tech: [
-            { name: 'NodeJS', variant: '', bg: 'lightGreen', icon: icon.nodeIcon },
-            { name: 'Inquirer', variant: 'dark', icon: icon.inquirerIcon },
+            { name: 'Express-Hbs', variant: 'light', bg: '', icon: icon.handleIcon },
+            { name: 'Bootstrap', variant: '', bg: 'purple', icon: icon.bootStrap },
+            { name: 'JavaScript', variant: 'dark', bg: '', icon: icon.jsIcon },
         ]
     },
 
