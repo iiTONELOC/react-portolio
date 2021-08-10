@@ -50,7 +50,7 @@ export default function Contact() {
             setFormState(initialState);
             setTimeout(() => {
                 setConfirmation(null);
-                window.location.assign('/react-portolio')
+                document.location.reload()
             }, 4000);
 
         }
