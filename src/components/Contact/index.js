@@ -50,7 +50,7 @@ export default function Contact() {
             setFormState(initialState);
             setTimeout(() => {
                 setConfirmation(null);
-                window.location.assign('/react-portfolio')
+                window.location.assign('/react-portolio')
             }, 4000);
 
         }
