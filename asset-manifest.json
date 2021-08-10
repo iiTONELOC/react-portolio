@@ -1,30 +1,30 @@
 {
   "files": {
     "main.css": "/react-portolio/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/react-portolio/static/js/main.0330ab9e.chunk.js",
-    "main.js.map": "/react-portolio/static/js/main.0330ab9e.chunk.js.map",
+    "main.js": "/react-portolio/static/js/main.72b1f1a3.chunk.js",
+    "main.js.map": "/react-portolio/static/js/main.72b1f1a3.chunk.js.map",
     "runtime-main.js": "/react-portolio/static/js/runtime-main.eb06dfad.js",
     "runtime-main.js.map": "/react-portolio/static/js/runtime-main.eb06dfad.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/react-portolio/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.9f4a16d5.chunk.js": "/react-portolio/static/js/2.9f4a16d5.chunk.js",
-    "static/js/2.9f4a16d5.chunk.js.map": "/react-portolio/static/js/2.9f4a16d5.chunk.js.map",
+    "static/js/2.a5a3dab4.chunk.js": "/react-portolio/static/js/2.a5a3dab4.chunk.js",
+    "static/js/2.a5a3dab4.chunk.js.map": "/react-portolio/static/js/2.a5a3dab4.chunk.js.map",
     "index.html": "/react-portolio/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/react-portolio/static/css/2.4c97ca4f.chunk.css.map",
     "static/css/main.6dea0f05.chunk.css.map": "/react-portolio/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.9f4a16d5.chunk.js.LICENSE.txt": "/react-portolio/static/js/2.9f4a16d5.chunk.js.LICENSE.txt",
+    "static/js/2.a5a3dab4.chunk.js.LICENSE.txt": "/react-portolio/static/js/2.a5a3dab4.chunk.js.LICENSE.txt",
     "static/media/boredinthehousegif.1306583d.gif": "/react-portolio/static/media/boredinthehousegif.1306583d.gif",
     "static/media/employee.7f53f2e9.jpg": "/react-portolio/static/media/employee.7f53f2e9.jpg",
     "static/media/proximo-screenshot.b56bf9ca.jpg": "/react-portolio/static/media/proximo-screenshot.b56bf9ca.jpg",
     "static/media/puppy.cec8fc0e.png": "/react-portolio/static/media/puppy.cec8fc0e.png",
-    "static/media/resume.64fafcc2.pdf": "/react-portolio/static/media/resume.64fafcc2.pdf",
+    "static/media/resume.d26560f1.pdf": "/react-portolio/static/media/resume.d26560f1.pdf",
     "static/media/sportsbuzz.f4f7eabd.png": "/react-portolio/static/media/sportsbuzz.f4f7eabd.png",
     "static/media/weather.9dfcad5a.png": "/react-portolio/static/media/weather.9dfcad5a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.eb06dfad.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.9f4a16d5.chunk.js",
+    "static/js/2.a5a3dab4.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.0330ab9e.chunk.js"
+    "static/js/main.72b1f1a3.chunk.js"
   ]
 }
