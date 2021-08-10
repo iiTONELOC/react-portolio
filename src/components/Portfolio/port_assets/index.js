@@ -12,16 +12,16 @@ const icon = Icons();
 
 const works = [
     {
-        name: 'Sports Buzz',
-        repo: `https://github.com/mrhumpherys/social-sports`,
-        url: `https://sports-buzz.herokuapp.com`,
-        screenshot: sB,
+        name: 'Employee Tracker',
+        repo: `${githubRepo}employee-tracker/`,
+        url: `${githubRepo}employee-tracker/`,
+        screenshot: eT,
         tech: [
-            { name: 'Express-Hbs', variant: 'light', bg: '', icon: icon.handleIcon },
-            { name: 'Bootstrap', variant: '', bg: 'purple', icon: icon.bootStrap },
-            { name: 'JavaScript', variant: 'dark', bg: '', icon: icon.jsIcon },
-            { name: 'Sequelize', variant: 'light', bg: '', icon: icon.sqlIze },
-        ]
+            { name: 'NodeJS', variant: '', bg: 'lightGreen', icon: icon.nodeIcon },
+            { name: 'MySQL', variant: 'secondary', icon: icon.mysqlIcon },
+            { name: 'Inquirer', variant: 'dark', icon: icon.inquirerIcon },
+        ],
+        description: "Employee Tracker is a simple CLI for managing your MySQL Employee's database. Uses Node.js, MySQL/Sequelize, and the inquirer.js package"
     },
     {
         name: 'Rent a Puppy',
@@ -33,7 +33,8 @@ const works = [
             { name: 'TailwindsCSS', variant: 'secondary', icon: icon.twCssIcon },
             { name: 'JavaScript', variant: 'dark', bg: '', icon: icon.jsIcon },
             { name: 'Sequelize', variant: 'light', bg: '', icon: icon.sqlIze },
-        ]
+        ],
+        description: "Rent A Puppy, connects those that love pets but are unable to have their own with pet owners that don't want their pets alone while at work or on vacation"
     },
     {
         name: 'Proximo',
@@ -43,20 +44,24 @@ const works = [
         tech: [
             { name: 'TailwindsCSS', variant: 'secondary', icon: icon.twCssIcon },
             { name: 'JavaScript', variant: 'dark', bg: '', icon: icon.jsIcon },
-        ]
+        ],
+        description: "Proximo is a user-friendly chat app that allows for one to open the app, see all of the geographically close users of proximo, chat on a global chat and add friends. Great for use in offices, schools, and just about everywhere else."
+    },
+    {
+        name: 'Sports Buzz',
+        repo: `https://github.com/mrhumpherys/social-sports`,
+        url: `https://sports-buzz.herokuapp.com`,
+        screenshot: sB,
+        tech: [
+            { name: 'Express-Hbs', variant: 'light', bg: '', icon: icon.handleIcon },
+            { name: 'Bootstrap', variant: '', bg: 'purple', icon: icon.bootStrap },
+            { name: 'JavaScript', variant: 'dark', bg: '', icon: icon.jsIcon },
+            { name: 'Sequelize', variant: 'light', bg: '', icon: icon.sqlIze },
+        ],
+        description: "Sports Buzz is a full-stack web application using Node.js, Express.js, and Sequelize, that presents live and scheduled NBA games, NBA related news, as well as pages for updated scores and user comments about the game."
     },
 
-    {
-        name: 'Employee Tracker',
-        repo: `${githubRepo}employee-tracker/`,
-        url: `${githubRepo}employee-tracker/`,
-        screenshot: eT,
-        tech: [
-            { name: 'NodeJS', variant: '', bg: 'lightGreen', icon: icon.nodeIcon },
-            { name: 'MySQL', variant: 'secondary', icon: icon.mysqlIcon },
-            { name: 'Inquirer', variant: 'dark', icon: icon.inquirerIcon },
-        ]
-    },
+
 
     {
         name: 'Bored in the House',
@@ -67,7 +72,8 @@ const works = [
             { name: 'HTML', variant: 'light', bg: '', icon: icon.htmlIcon },
             { name: 'CSS', variant: '', bg: 'rebeccaPurple', icon: icon.cssIcon },
             { name: 'JavaScript', variant: 'dark', bg: '', icon: icon.jsIcon },
-        ]
+        ],
+        description: "Bored in the House is an interactive web application that presents meal recipes, drink recipes, and movies based on user input."
     },
 
     {
@@ -79,7 +85,8 @@ const works = [
             { name: 'Express-Hbs', variant: 'light', bg: '', icon: icon.handleIcon },
             { name: 'Bootstrap', variant: '', bg: 'purple', icon: icon.bootStrap },
             { name: 'JavaScript', variant: 'dark', bg: '', icon: icon.jsIcon },
-        ]
+        ],
+        description: "Dashboard is your source for ad-free weather and the day's top news headlines."
     },
 
 

@@ -50,7 +50,7 @@ export default function Contact() {
             setFormState(initialState);
             setTimeout(() => {
                 setConfirmation(null);
-                window.location = '/';
+                window.location.assign('/')
             }, 4000);
 
         }
