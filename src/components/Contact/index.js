@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
+
 import Form from 'react-bootstrap/Form';
 import { validateEmail } from '../../utils/helpers';
 export default function Contact() {
-    const initialState = { name: '', email: '', message: '' };
+    const initialState = { name: '', from_Email: '', message: '' };
     const [entry, setFormState] = useState(initialState);
-    const { name, email, message } = entry;
+    const { name, from_Email, message } = entry;
     const [errorMessage, setErrorMessage] = useState('');
+    const [emailConfirmation, setConfirmation] = useState(null);
 
     const handleOnChange = e => {
         setFormState({ ...entry, [e.target.name]: e.target.value });
-        if (e.target.name === 'email') {
+        if (e.target.name === 'from_Email') {
             const isValid = validateEmail(e.target.value);
             console.log(isValid);
             if (!isValid) {
@@ -30,25 +33,41 @@ export default function Contact() {
     }
 
     function handleSubmit(e) {
-        const isValid = validateEmail(email);
-        const refresh = () => {
-            alert(`${message} Sent!`);
-            window.location = '/';
-        }
         e.preventDefault();
+        const isValid = validateEmail(from_Email);
+        const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+        const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+        const USER_ID = process.env.REACT_APP_USER_ID;
+        const refresh = () => {
+            // const form = new FormData(entry)
+            emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                });
+            setConfirmation('Your message was sent successfully!');
+            setFormState(initialState);
+            setTimeout(() => {
+                setConfirmation(null);
+                window.location = '/';
+            }, 4000);
+
+        }
+
         errorMessage ? alert(errorMessage) :
-            !name && email && message ? alert('Name is required') :
-                !email && name && message ? alert('Email is required') :
-                    !message && email && name ? alert('Message is required') :
-                        !message && !email && !name ? alert('Fields can not be blank!') :
+            !name && from_Email && message ? alert('Name is required') :
+                !from_Email && name && message ? alert('Email is required') :
+                    !message && from_Email && name ? alert('Message is required') :
+                        !message && !from_Email && !name ? alert('Fields can not be blank!') :
                             !isValid ? alert('Your email is invalid') :
                                 refresh();
     }
 
     return (
         <section className='col-12 d-flex flex-wrap justify-content-center mt-5'>
-
-            <Form className='col-11 col-sm-11 col-md-6 col-lg-5 col-xl-4 bg-dark contactForm p-5 boxShadow'>
+            <div className='col-12 text-center mb-5 text-success'>{emailConfirmation}</div>
+            <Form className='col-11 col-sm-11 col-md-6 col-lg-5 col-xl-4 bg-dark contactForm p-5 boxShadow' onSubmit={(e) => handleSubmit(e)}>
                 <h1 className='text-white textShadow'>Let's get in touch!</h1>
 
                 <Form.Group controlId="nameControl">
@@ -67,10 +86,10 @@ export default function Contact() {
                     <Form.Control
                         className='formLabel'
                         type="email"
-                        name="email"
+                        name="from_Email"
                         placeholder="name@example.com"
                         onBlur={handleOnChange}
-                        defaultValue={email}
+                        defaultValue={from_Email}
                     />
                 </Form.Group>
                 <Form.Group controlId="messageControl">
@@ -94,8 +113,8 @@ export default function Contact() {
                 <div className='col-12 d-flex flex-wrap justify-content-end m-1 p-2'>
                     <button type='submit'
                         className='lightGreen p-3 m-1 text-white textShadow boxShadow submit'
-                        onSubmit={(e) => handleSubmit(e)}
-                        onClick={(e) => handleSubmit(e)}
+                    // onSubmit={(e) => handleSubmit(e)}
+                    // onClick={(e) => handleSubmit(e)}
                     >
                         Submit
                     </button>
