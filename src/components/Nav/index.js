@@ -26,7 +26,7 @@ export default function MyNav(props) {
         <Container fluid className='navBar'>
             <Navbar className={'d-flex flex-wrap justify-content-between p-3'}>
                 <div className='d-flex flex-wrap justify-content-center'>
-                    <Navbar.Brand href={document.location.hostname} ><h1 className='navTitle '>Anthony T</h1> </Navbar.Brand>
+                    <Navbar.Brand onClick={() => window.location.reload()} ><h1 className='navTitle '>Anthony T</h1> </Navbar.Brand>
                 </div>
                 <Nav className='d-flex flex-wrap justify-content-center'>
                     {tabs.map((tabs) => (
