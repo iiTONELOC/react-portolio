@@ -4,6 +4,7 @@ import rP from '../../../assets/project_screenshots/puppy.png';
 import wD from '../../../assets/project_screenshots/weather.png';
 import rG from '../../../assets/project_screenshots/screenshot.gif';
 import eT from '../../../assets/project_screenshots/employee.jpg';
+import Ts from '../../../assets/project_screenshots/Tailstrapscreenshot.png';
 import Icons from '../../../assets/icons';
 const githubUrl = 'https://iitoneloc.github.io/';
 const githubRepo = 'https://github.com/iiTONELOC/';
@@ -11,6 +12,18 @@ const icon = Icons();
 
 
 const works = [
+    {
+        name: 'TailStrap',
+        repo: `${githubRepo}tailstrap`,
+        url: `${githubUrl}tailstrap/`,
+        screenshot: Ts,
+        tech: [
+            { name: 'NodeJS', variant: '', bg: 'lightGreen', icon: icon.nodeIcon },
+            { name: 'TailwindsCSS', variant: 'secondary', icon: icon.twCssIcon },
+            { name: 'JavaScript', variant: 'dark', bg: '', icon: icon.jsIcon },
+            { name: 'TypeScript', variant: 'light', bg: '', icon: icon.typeScript },
+        ]
+    },
     {
         name: 'Sports Buzz',
         repo: `https://github.com/mrhumpherys/social-sports`,
