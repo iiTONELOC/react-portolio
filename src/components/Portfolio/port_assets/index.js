@@ -22,13 +22,13 @@ const works = [
             { name: 'TailwindsCSS', variant: 'secondary', icon: icon.twCssIcon },
             { name: 'JavaScript', variant: 'dark', bg: '', icon: icon.jsIcon },
             { name: 'TypeScript', variant: 'light', bg: '', icon: icon.typeScript },
-        ]
+        ],
+        description: "Tired of implementing boilerplate for buttons, tool-tips, modals, and toasts? TailStrap aims to fill the gap as a reuseable component library for TailwindCSS + React.js."
     },
     {
-        name: 'Sports Buzz',
-        repo: `https://github.com/mrhumpherys/social-sports`,
-        url: `https://sports-buzz.herokuapp.com`,
-        screenshot: sB,
+        name: 'Employee Tracker',
+        repo: `${githubRepo}employee-tracker`,
+        screenshot: eT,
         tech: [
             { name: 'NodeJS', variant: '', bg: 'lightGreen', icon: icon.nodeIcon },
             { name: 'MySQL', variant: 'secondary', icon: icon.mysqlIcon },
