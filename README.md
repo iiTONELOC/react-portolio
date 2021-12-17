@@ -10,10 +10,10 @@
 
 # Table of Contents
 
--   [Technology](#technology)
--   [Usage](#usage)
--   [Questions](#questions)
--   [License](#license)
+- [Technology](#technology)
+- [Usage](#usage)
+- [Questions](#questions)
+- [License](#license)
 
 # Technology
 
