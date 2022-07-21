@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-portolio/static/css/main.2ae47eeb.chunk.css",
-    "main.js": "/react-portolio/static/js/main.5a0c74c5.chunk.js",
-    "main.js.map": "/react-portolio/static/js/main.5a0c74c5.chunk.js.map",
+    "main.js": "/react-portolio/static/js/main.0315b9f2.chunk.js",
+    "main.js.map": "/react-portolio/static/js/main.0315b9f2.chunk.js.map",
     "runtime-main.js": "/react-portolio/static/js/runtime-main.eb06dfad.js",
     "runtime-main.js.map": "/react-portolio/static/js/runtime-main.eb06dfad.js.map",
     "static/css/2.081f420c.chunk.css": "/react-portolio/static/css/2.081f420c.chunk.css",
@@ -16,7 +16,7 @@
     "static/media/employee.7f53f2e9.jpg": "/react-portolio/static/media/employee.7f53f2e9.jpg",
     "static/media/proximo-screenshot.b56bf9ca.jpg": "/react-portolio/static/media/proximo-screenshot.b56bf9ca.jpg",
     "static/media/puppy.cec8fc0e.png": "/react-portolio/static/media/puppy.cec8fc0e.png",
-    "static/media/resume.0a12bb30.pdf": "/react-portolio/static/media/resume.0a12bb30.pdf",
+    "static/media/resume.1611fc56.pdf": "/react-portolio/static/media/resume.1611fc56.pdf",
     "static/media/sportsbuzz.f4f7eabd.png": "/react-portolio/static/media/sportsbuzz.f4f7eabd.png",
     "static/media/weather.9dfcad5a.png": "/react-portolio/static/media/weather.9dfcad5a.png"
   },
@@ -25,6 +25,6 @@
     "static/css/2.081f420c.chunk.css",
     "static/js/2.616722e4.chunk.js",
     "static/css/main.2ae47eeb.chunk.css",
-    "static/js/main.5a0c74c5.chunk.js"
+    "static/js/main.0315b9f2.chunk.js"
   ]
 }
